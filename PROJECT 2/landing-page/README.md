@@ -1,13 +1,38 @@
 # Landing Page Project
 
-## Table of Contents
+This project is about to build a multi-section landing page, with a dynamically updating navigational
+menu based on the amount of content that is added to the page.
 
-* [Instructions](#instructions)
+## Table Of Contents
 
-## Instructions
+- HTML - index.html
+- CSS - styles.css
+- JavaScript - app.js
+- Instructions to run the file
+- Authors
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Index.html
 
-To get started, open `js/app.js` and start building out the app's functionality
+This file is the skeleton of the landing page. Within the header, you'll find the Navigation
+(starts as empty UL that will be populated with JS). Then you will find the sections. Each Section has an ID
+and a data attribute that will populate the li node. Adding more sections will automatically populate nav.
+In the end you will find the footer.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+## Styles.css
+
+Most of the code here was taken from the skelton code provided by Udacity. I have made some major
+changes to the color palette. A special thing to notice here is the style for hover animation on
+the active navigation header.
+
+## App.js
+
+This file dynamically adds the content to the page. I have build a dynamic navbar.
+To improve the user experience, the section actively being viewed should be differentiated in some way. 
+Additionally, when a user clicks on a navigation item, the item should scroll you to the
+appropriate section rather than giving you the default jump.
+
+## Authors
+
+* **Marialena Alevizaki**
+
+

@@ -69,16 +69,19 @@ const populateNavbar = () => {
 
 // Add class 'active' to section when near top of viewport
 
+
 function setActiveClass(sections) {
         for (const section of sections) {
+            const activeLink = document.querySelector(`a[href="#${section.getAttribute("id")}"]`);
             if (isInViewport(section)) { //using the helper function - if true add class 'active'
-                section.classList.add("active"); 
+                section.classList.add("active"); //add class active
+                activeLink.classList.add("active_link"); //add class active link to be able to highlight it - Added style to Css file
             } else {
                 section.classList.remove("active"); //if false remove it
-            }
+                activeLink.classList.remove("active_link"); //remove class from link 
+            };
         };
 };
-
 
 // Scroll to anchor ID using scrollTO event
 
